@@ -21,7 +21,7 @@ export const instance = new Razorpay({
 app.get('/', (req, res) => {
   res.send('✅ Razorpay Server is Live');
 });
-
+app.use(express.urlencoded({extended:true}))
 // Use routes
 app.use('/api', router);
 
