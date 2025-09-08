@@ -8,8 +8,8 @@ import router from './Routes/ProductRoutes.js';
 const app = express();
 app.use(express.json());
 
-console.log("🔐 RAZORPAY_KEY_ID:", process.env.RAZORPAY_KEY_ID);
-console.log("🔐 RAZORPAY_KEY_SECRET:", process.env.RAZORPAY_KEY_SECRET);
+// console.log("🔐 RAZORPAY_KEY_ID:", process.env.RAZORPAY_KEY_ID);
+// console.log("🔐 RAZORPAY_KEY_SECRET:", process.env.RAZORPAY_KEY_SECRET);
 
 // Razorpay instance
 export const instance = new Razorpay({
